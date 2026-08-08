@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aiman Malik — Full-Stack Developer & UI/UX Designer</title>
+<meta name="description" content="Aiman Malik is a full-stack developer and UI/UX designer from Islamabad, Pakistan, building production-ready web apps with Python, Django, FastAPI, React.js and Figma design systems." />
+<meta name="keywords" content="Aiman Malik, full stack developer portfolio, UI UX designer Pakistan, React developer, Django developer, developer portfolio" />
+<meta property="og:title" content="Aiman Malik — Full-Stack Developer & UI/UX Designer" />
+<meta property="og:description" content="Production-ready web apps, from Figma wireframe to live deployment." />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="apple-touch-icon" href="assets/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Yellowtail&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="#hero" class="brand" aria-label="Aiman Malik — home">
+      <img src="assets/aiman-portrait.png" alt="Aiman Malik logo" />
+      <span class="brand-text">Aiman Malik</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="assets/Aiman_Malik_Resume.pdf" class="btn btn-primary" download style="padding:8px 18px; font-size:0.84rem; border-radius:999px;">Résumé</a>
+      <button class="burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">available for freelance &amp; full-time work</span>
+      <h1>Hi, I'm Aiman Malik.</h1>
+      <div class="role-line mono"><span id="role-typed"></span><span class="cursor"></span></div>
+      <p class="hero-copy">Full-stack developer and UI/UX designer based in Islamabad. I take products from a blank Figma canvas to a live, working deployment — Python/Django and FastAPI on the backend, React.js on the front, and a design system that ties it all together.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="assets/Aiman_Malik_Resume.pdf" download class="btn btn-ghost">Download Résumé</a>
+      </div>
+      <div class="hero-social">
+        <a class="social-btn" href="https://github.com/Aiman950-dot" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.3.1-2.7 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.4.2 2.4.1 2.7.8.9 1.2 2 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+        </a>
+        <a class="social-btn" href="https://www.linkedin.com/in/aiman-malik-544916285" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 11.01-4.14 2.07 2.07 0 01-.01 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a class="social-btn" href="mailto:aimanmalikaman@gmail.com" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="terminal reveal">
+      <div class="terminal-bar">
+        <span class="r"></span><span class="y"></span><span class="g"></span>
+        <span class="label">~/portfolio — zsh</span>
+      </div>
+      <div class="terminal-body" id="termBody">
+        <div class="line"><span class="prompt">guest@aiman</span>:<span class="path">~</span>$ <span id="term-typed"></span><span class="term-cursor" id="termCursor"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AT A GLANCE -->
+<div class="glance-strip reveal">
+  <div class="wrap glance-inner">
+    <div class="glance-item">
+      <span class="glance-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+      <div><b>Islamabad, PK</b><span>Based &amp; working remotely</span></div>
+    </div>
+    <div class="glance-item">
+      <span class="glance-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></span>
+      <div><b>3+ Years</b><span>Full-stack &amp; UI/UX experience</span></div>
+    </div>
+    <div class="glance-item">
+      <span class="glance-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg></span>
+      <div><b>B.Sc. Computer Science</b><span>UET Mardan · CGPA 3.6/4.0</span></div>
+    </div>
+    <div class="glance-item">
+      <span class="glance-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34M12 2a4 4 0 0 1 4 4v8H8V6a4 4 0 0 1 4-4z"></path></svg></span>
+      <div><b>4× GPA Scholar</b><span>Merit-based, 2022–2025</span></div>
+    </div>
+    <div class="glance-item">
+      <span class="glance-ic">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+        <span class="pulse-indicator"></span>
+      </span>
+      <div><b>Open to Work</b><span>Freelance &amp; full-time roles</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <div class="signature">Aiman Malik</div>
+      <div class="portrait-card">
+        <img src="assets/aiman-portrait.png" alt="Portrait of Aiman Malik" />
+        <div class="fun-fact"><b>Fun fact —</b> Aiman's laptop was a GPA-based award through Pakistan's Prime Minister's Youth Laptop Scheme 2025 — one of four GPA-based scholarships he's earned. See the full list in Achievements below.</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow-sm">About</span>
+      <h2>CS graduate who ships, not just designs.</h2>
+      <div class="about-copy" style="margin-top:20px;">
+        <p>I'm a <strong>results-driven full-stack developer and software engineer</strong> with over three years of hands-on experience delivering production-ready web applications. My core stack is <strong>Python (Django/FastAPI)</strong>, <strong>React.js</strong>, and REST API design — but the part I care about most is the handoff between design and code.</p>
+        <p>I currently work on projects for <strong>UET Mardan</strong> and recently completed a paid internship at <strong>Intelligent System Design (Pvt.) Ltd.</strong>, where I worked across AI-based systems design, web development, and product presentation. I've independently taken products from Figma wireframes through to live deployment — wearing the designer hat and the engineer hat on the same project.</p>
+      </div>
+      <div class="stat-row">
+        <div class="stat"><b>3+ yrs</b><span>hands-on dev experience</span></div>
+        <div class="stat"><b>5+</b><span>end-to-end Figma projects</span></div>
+        <div class="stat"><b>3.6/4.0</b><span>CGPA · Dean's List '23–'24</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow-sm">Skills</span>
+      <h2>Tools I reach for daily</h2>
+      <p>Grouped by where they sit in the stack, not ranked by a progress bar — every one of these has shipped in a real project below.</p>
+    </div>
+    <div class="skill-groups reveal">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="skill-chip-list">
+          <div class="skill-chip"><span class="mono-badge">Py</span>Python</div>
+          <div class="skill-chip"><span class="mono-badge">JS</span>JavaScript (ES6+)</div>
+          <div class="skill-chip"><span class="mono-badge">Php</span>PHP</div>
+          <div class="skill-chip"><span class="mono-badge">H5</span>HTML5</div>
+          <div class="skill-chip"><span class="mono-badge">C3</span>CSS3</div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Frameworks</h3>
+        <div class="skill-chip-list">
+          <div class="skill-chip"><span class="mono-badge">Dj</span>Django</div>
+          <div class="skill-chip"><span class="mono-badge">Fa</span>FastAPI</div>
+          <div class="skill-chip"><span class="mono-badge">Re</span>React.js</div>
+          <div class="skill-chip"><span class="mono-badge">Ci</span>CodeIgniter</div>
+          <div class="skill-chip"><span class="mono-badge">Wp</span>WordPress</div>
+          <div class="skill-chip"><span class="mono-badge">Tw</span>Tailwind CSS</div>
+          <div class="skill-chip"><span class="mono-badge">Bs</span>Bootstrap</div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud &amp; DevOps</h3>
+        <div class="skill-chip-list">
+          <div class="skill-chip"><span class="mono-badge">Ve</span>Vercel</div>
+          <div class="skill-chip"><span class="mono-badge">Nt</span>Netlify</div>
+          <div class="skill-chip"><span class="mono-badge">Gh</span>Git &amp; GitHub</div>
+          <div class="skill-chip"><span class="mono-badge">Pm</span>Postman</div>
+          <div class="skill-chip"><span class="mono-badge">Ku</span>Linux (Kali)</div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Data &amp; APIs</h3>
+        <div class="skill-chip-list">
+          <div class="skill-chip"><span class="mono-badge">My</span>MySQL</div>
+          <div class="skill-chip"><span class="mono-badge">Mo</span>MongoDB</div>
+          <div class="skill-chip"><span class="mono-badge">Rs</span>REST API Design</div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>UI / UX</h3>
+        <div class="skill-chip-list">
+          <div class="skill-chip"><span class="mono-badge">Fi</span>Figma</div>
+          <div class="skill-chip"><span class="mono-badge">Wf</span>Wireframes</div>
+          <div class="skill-chip"><span class="mono-badge">Pr</span>Prototyping</div>
+          <div class="skill-chip"><span class="mono-badge">Ds</span>Design Systems</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow-sm">Projects</span>
+      <h2>Things I've shipped</h2>
+      <p>Live links where the project is deployed, GitHub where the code is public. Tap "case study" on any card for the problem, tradeoffs, and outcome.</p>
+    </div>
+
+    <div class="project-grid reveal">
+
+      <!-- Project 1 -->
+      <article class="project-card">
+        <div class="project-thumb"><img src="assets/project-lawazana.jpg" alt="Lawazana interface mockup" /></div>
+        <div class="project-body">
+          <h3>Lawazana</h3>
+          <div class="project-outcome">Client delivery — all requirements met on schedule</div>
+          <p class="project-desc">Production-ready React.js frontend built for an external client, with a reusable component architecture and pixel-perfect responsive design.</p>
+          <div class="tag-row">
+            <span class="tag">React.js</span><span class="tag">REST API</span><span class="tag">JavaScript</span><span class="tag">CSS3</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Logic-Loomer-pvt-ltd/LAWAZANA_Project/tree/Aiman" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <div class="case-toggle" data-target="case-1"><span class="chev">▸</span> Case study</div>
+          <div class="case-detail" id="case-1">
+            <dl>
+              <dt>Context</dt><dd>Client project during an internship at Logic Loomer (Pvt) Ltd., delivered on the "Aiman" branch of the team repo.</dd>
+              <dt>Constraints</dt><dd>Fixed client spec and a defined delivery deadline, with an existing API contract to build against.</dd>
+              <dt>My role</dt><dd>Owned the frontend end-to-end: component structure, state management, and matching the approved design pixel-for-pixel.</dd>
+              <dt>Result</dt><dd>All client requirements were met and approved on schedule.</dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="project-thumb"><img src="assets/project-ecommerce.jpg" alt="E-Commerce Platform interface mockup" /></div>
+        <div class="project-body">
+          <h3>E-Commerce Platform</h3>
+          <div class="project-outcome">Full MVC store — live &amp; handling transactions</div>
+          <p class="project-desc">A complete e-commerce platform built solo: backend REST APIs, payment integration, inventory management, and an admin dashboard.</p>
+          <div class="tag-row">
+            <span class="tag">CodeIgniter</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="https://ecomm.infinityfree.me/" target="_blank" rel="noopener">Live demo ↗</a>
+          </div>
+          <div class="case-toggle" data-target="case-2"><span class="chev">▸</span> Case study</div>
+          <div class="case-detail" id="case-2">
+            <dl>
+              <dt>Context</dt><dd>Self-directed build to prove out a full commerce flow, from catalog browsing to checkout.</dd>
+              <dt>Constraints</dt><dd>Free-tier hosting, so the database schema had to stay lean while still supporting live transactions and a full inventory lifecycle.</dd>
+              <dt>Architecture</dt><dd>CodeIgniter MVC talking to MySQL, with a dedicated admin dashboard for order and stock management.</dd>
+              <dt>Result</dt><dd>End-to-end ownership of user auth, product catalog, cart, checkout, and order management.</dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <div class="project-thumb"><img src="assets/project-safecity.jpg" alt="Safe City Mardan interface mockup" /></div>
+        <div class="project-body">
+          <h3>Safe City Mardan</h3>
+          <div class="project-outcome">Built during a paid AI-systems internship</div>
+          <p class="project-desc">A civic-focused web app built during a paid internship at Intelligent System Design (Pvt.) Ltd., applying AI-based systems design concepts to a real deployment.</p>
+          <div class="tag-row">
+            <span class="tag">React.js</span><span class="tag">Vercel</span><span class="tag">System Design</span>
+          </div>
+          <div class="project-links">
+            <a href="https://safe-city-mardan.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
+          </div>
+          <div class="case-toggle" data-target="case-3"><span class="chev">▸</span> Case study</div>
+          <div class="case-detail" id="case-3">
+            <dl>
+              <dt>Context</dt><dd>Internship deliverable at Intelligent System Design (Pvt.) Ltd., STP UET Mardan, focused on AI-based systems design.</dd>
+              <dt>My role</dt><dd>Website design and build, plus the accompanying UI/UX work in Figma and the pitch material presented alongside it.</dd>
+              <dt>Result</dt><dd>Shipped and deployed live on Vercel as part of a completed, successfully signed-off internship.</dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card">
+        <div class="project-thumb"><img src="assets/project-kwsline.png" alt="King Wave Shipping interface mockup" /></div>
+        <div class="project-body">
+          <h3>KWS Line</h3>
+          <div class="project-outcome">Client project — custom WordPress theme</div>
+          <p class="project-desc">A client business website on a fully custom WordPress theme rather than an off-the-shelf template — hand-built markup, styling, and structure.</p>
+          <div class="tag-row">
+            <span class="tag">Client Project</span><span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">Custom Theme</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.kwsline.com/" target="_blank" rel="noopener">Live site ↗</a>
+          </div>
+          <div class="case-toggle" data-target="case-4"><span class="chev">▸</span> Case study</div>
+          <div class="case-detail" id="case-4">
+            <dl>
+              <dt>Context</dt><dd>Client project — the business wanted a distinct site rather than a generic marketplace theme.</dd>
+              <dt>My role</dt><dd>Designed and coded the theme from scratch for the client: templates, styling, and WordPress structure.</dd>
+              <dt>Result</dt><dd>Live production site running on the custom theme.</dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card">
+        <div class="project-thumb"><img src="assets/project-fyp.jpg" alt="Final Year Project interface mockup" /></div>
+        <div class="project-body">
+          <h3>Final Year Project</h3>
+          <div class="project-outcome">In development — real-time mobile &amp; web app</div>
+          <p class="project-desc">Sole UI/UX designer and developer: a full Figma design system feeding a React.js frontend, with real-time data through a custom Python/FastAPI backend.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">React.js</span><span class="tag">Figma</span>
+          </div>
+          <div class="project-links">
+            <span style="color:var(--text-muted); font-size:0.82rem; font-family:var(--mono);">Shipping soon</span>
+          </div>
+          <div class="case-toggle" data-target="case-5"><span class="chev">▸</span> Case study</div>
+          <div class="case-detail" id="case-5">
+            <dl>
+              <dt>Context</dt><dd>University final year project, independently designed and built end-to-end.</dd>
+              <dt>My role</dt><dd>Sole designer: user flows, wireframes, high-fidelity mockups, and interactive prototypes, plus the React/FastAPI implementation and model training.</dd>
+              <dt>Result</dt><dd>Received exceptional faculty feedback for user-centered design and modern interface standards.</dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow-sm">Experience</span>
+      <h2>Where I've worked</h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-head">
+          <h3>AI-Based Systems Design &amp; Development Intern</h3>
+          <span class="tl-date">Apr 2026 – Jun 2026</span>
+        </div>
+        <div class="tl-role">Intelligent System Design (Pvt.) Ltd., STP UET Mardan · Paid internship</div>
+        <p class="tl-desc">Worked across AI-based systems design, software development, and web/app design. Designed websites, social media content, and digital brochures, and built UI/UX in Figma from wireframe through to prototype. Prepared elevator pitches, presentations, and business plans for technology-based solutions.</p>
+        <div class="tl-tags"><span class="tag">Figma</span><span class="tag">Web Design</span><span class="tag">Systems Design</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-head">
+          <h3>Full Stack Developer &amp; UI/UX Designer</h3>
+          <span class="tl-date">Ongoing</span>
+        </div>
+        <div class="tl-role">UET Mardan · Internship / project role</div>
+        <p class="tl-desc">Delivered the Lawazana client frontend in React.js, and independently built a full e-commerce platform in CodeIgniter — backend APIs, payment integration, inventory, and an admin dashboard. Designed UI/UX for 5+ projects end-to-end, from user research through developer handoff.</p>
+        <div class="tl-tags"><span class="tag">React.js</span><span class="tag">CodeIgniter</span><span class="tag">MySQL</span><span class="tag">Figma</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-head">
+          <h3>Frontend Developer — Client Project</h3>
+          <span class="tl-date">Internship</span>
+        </div>
+        <div class="tl-role">Logic Loomer (Pvt) Ltd. · Lawazana project</div>
+        <p class="tl-desc">Built and shipped the client-facing React.js frontend for the Lawazana project, integrating RESTful APIs and delivering a pixel-perfect, fully responsive interface.</p>
+        <div class="tl-tags"><span class="tag">React.js</span><span class="tag">REST API</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow-sm">Education, Achievements &amp; Certifications</span>
+      <h2>Background</h2>
+    </div>
+    <div class="split-two reveal">
+      <div class="info-card">
+        <h3>Education</h3>
+        <div class="edu-row">
+          <b>B.Sc. Computer Science</b>
+          <div>University of Engineering &amp; Technology (UET) Mardan</div>
+          <div>2022 – 2026 · CGPA 3.6 / 4.00 · Dean's List 2023–2024</div>
+        </div>
+      </div>
+      <div class="info-card">
+        <h3>Achievements</h3>
+        <ul class="cert-list">
+          <li>Recipient, Prime Minister's Youth Laptop Scheme (2025) — GPA-based award</li>
+          <li>Merit-Based Scholarship — awarded 4× on GPA basis (2022–2025)</li>
+          <li>PEEF Scholarship (2022)</li>
+          <li>Dean's List — UET Mardan (2023–2024)</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h3>Certifications</h3>
+        <ul class="cert-list">
+          <li>Certified UI/UX Designer — UET Mardan (2022)</li>
+          <li>E-Commerce &amp; Shopify Store Development — UET Mardan (2023)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <span class="eyebrow-sm">Contact</span>
+      <h2 style="margin-bottom:16px;">Interested in working together?</h2>
+      <p>I'm open to freelance work, full-time roles, and consulting — whether that's a full product build or a focused UI/UX pass on something that already exists.</p>
+      <div class="contact-line"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></span> aimanmalikaman@gmail.com</div>
+      <div class="contact-line"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .7 3a2 2 0 01-.4 2.1L8 10.1a16 16 0 006 6l1.3-1.4a2 2 0 012.1-.4c1 .4 2 .6 3 .7a2 2 0 011.6 2z"/></svg></span> +92 319 9406851</div>
+      <div class="contact-line"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span> Islamabad, Pakistan</div>
+      <div class="response-note">I usually reply within 24 hours. For urgent inquiries, email is the fastest way to reach me.</div>
+    </div>
+
+    <form id="contact-form" class="reveal">
+      <div class="field">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+      </div>
+      <div class="field">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="email" placeholder="you@example.com" required />
+      </div>
+      <div class="field">
+        <label for="cf-type">What are you reaching out about?</label>
+        <select id="cf-type" name="inquiry_type">
+          <option>Freelance project</option>
+          <option>Full-time role</option>
+          <option>Consulting</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" placeholder="Tell me a bit about what you need..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" id="cf-submit" style="justify-content:center;">Send Message</button>
+      <div class="form-msg ok" id="cf-ok">Thanks — your message has been sent. I'll get back to you within 24 hours.</div>
+      <div class="form-msg err" id="cf-err">Something went wrong sending that. Please email me directly at <a href="mailto:aimanmalikaman@gmail.com" style="text-decoration:underline;">aimanmalikaman@gmail.com</a>.</div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-grid-cols">
+    <div class="footer-col-brand">
+      <a href="#hero" class="brand footer-brand" aria-label="Aiman Malik — home">
+        <img src="assets/aiman-portrait.png" alt="Aiman Malik logo" />
+        <span class="brand-text">Aiman Malik</span>
+      </a>
+      <p class="footer-bio">Full-stack developer and UI/UX designer building high-performance, production-ready web applications from design systems to deployment.</p>
+    </div>
+    
+    <div class="footer-col-links">
+      <h3>Navigation</h3>
+      <ul class="footer-nav-list">
+        <li><a href="#about"><span class="chevron-arrow">›</span> About</a></li>
+        <li><a href="#skills"><span class="chevron-arrow">›</span> Skills</a></li>
+        <li><a href="#projects"><span class="chevron-arrow">›</span> Projects</a></li>
+        <li><a href="#experience"><span class="chevron-arrow">›</span> Experience</a></li>
+        <li><a href="#education"><span class="chevron-arrow">›</span> Education</a></li>
+        <li><a href="#contact"><span class="chevron-arrow">›</span> Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-col-contact">
+      <h3>Contact</h3>
+      <ul class="footer-contact-list">
+        <li>
+          <span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .7 3a2 2 0 01-.4 2.1L8 10.1a16 16 0 006 6l1.3-1.4a2 2 0 012.1-.4c1 .4 2 .6 3 .7a2 2 0 011.6 2z"/></svg></span>
+          <span>+92 319 9406851</span>
+        </li>
+        <li>
+          <span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></span>
+          <a href="mailto:aimanmalikaman@gmail.com">aimanmalikaman@gmail.com</a>
+        </li>
+        <li>
+          <span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span>Islamabad, Pakistan</span>
+        </li>
+        <li>
+          <span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          <span>Mon - Fri / 8am - 10pm</span>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="footer-col-newsletter">
+      <h3>Get the latest information</h3>
+      <p class="newsletter-text">Subscribe to receive updates on my recent projects, open-source work, and tech articles.</p>
+      <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+        <input type="email" placeholder="Your email" required />
+        <button type="submit" aria-label="Subscribe"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+      </form>
+      <div class="footer-social-icons">
+        <a href="https://github.com/Aiman950-dot" target="_blank" rel="noopener" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.3.1-2.7 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.4.2 2.4.1 2.7.8.9 1.2 2 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg></a>
+        <a href="https://www.linkedin.com/in/aiman-malik-544916285" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 11.01-4.14 2.07 2.07 0 01-.01 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a href="mailto:aimanmalikaman@gmail.com" aria-label="Email"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-copy">
+    <div class="wrap">© 2026 Aiman Malik. Built with a genuine terminal habit.</div>
+  </div>
+</footer>
+
+
+</body>
+</html>
